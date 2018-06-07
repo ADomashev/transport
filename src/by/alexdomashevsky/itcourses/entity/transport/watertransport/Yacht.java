@@ -1,11 +1,11 @@
 package by.alexdomashevsky.itcourses.entity.transport.watertransport;
 
 import by.alexdomashevsky.itcourses.entity.transport.abstracttransport.WaterTransport;
-import by.alexdomashevsky.itcourses.util.ComfortClass;
+import by.alexdomashevsky.itcourses.util.TypeComfortClass;
 import by.alexdomashevsky.itcourses.util.TypeOfMovement;
 
 public class Yacht extends WaterTransport {
-	private ComfortClass comfortClass;
+	private TypeComfortClass comfortClass;
 
 	private Yacht() {
 		
@@ -13,17 +13,17 @@ public class Yacht extends WaterTransport {
 
 	public Yacht(String name, int speed, TypeOfMovement typeOfMovement,
 					double priceForTrip, int displacement,
-					ComfortClass comfortClass,double weightLimit) {
+					TypeComfortClass comfortClass,double weightLimit) {
 		
 		super(name, speed, typeOfMovement, priceForTrip, displacement , weightLimit);
 		this.comfortClass = comfortClass;
 	}
 	
-	public ComfortClass getComfortClass() {
+	public TypeComfortClass getComfortClass() {
 		return comfortClass;
 	}
 
-	public void setComfortClass(ComfortClass comfortClass) {
+	public void setComfortClass(TypeComfortClass comfortClass) {
 		this.comfortClass = comfortClass;
 	}
 	
@@ -67,7 +67,7 @@ public class Yacht extends WaterTransport {
 			return this;
 		}
 		
-		public YachtBuilder setComfortClass(ComfortClass comfortClass) {
+		public YachtBuilder setComfortClass(TypeComfortClass comfortClass) {
 			Yacht.this.setComfortClass(comfortClass);
 			return this;
 		}
