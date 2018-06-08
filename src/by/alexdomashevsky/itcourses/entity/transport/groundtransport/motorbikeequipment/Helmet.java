@@ -7,14 +7,14 @@ public class Helmet extends Accessory {
 		
 	}
 	
+	public Helmet(String name, double price, String color) {
+		super(name, price, color);
+	}
 	
-
 	public Helmet(String name, double price, String color,Visor visor) {
 		super(name, price, color);
 		this.visor = visor;
 	}
-
-
 
 	public Visor getVisor() {
 		return visor;
@@ -26,13 +26,7 @@ public class Helmet extends Accessory {
 
 	@Override
 	public String toString() {
-		return "Helmet "+super.toString()+" visor=" + getVisor();
+		return "Helmet "+super.toString()+" with "+" visor=" + getVisor();
 	}
-
-
-	
-
-	
-	
 	
 }

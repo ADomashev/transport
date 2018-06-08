@@ -3,9 +3,11 @@ package by.alexdomashevsky.itcourses.entity.transport.groundtransport.motorbikee
 public class Visor {
 
 	private boolean tint;
+	
 	public Visor() {
 		
 	}
+	
 	public Visor( boolean tint) {
 		
 		this.tint = tint;
@@ -20,8 +22,7 @@ public class Visor {
 	
 	@Override
 	public String toString() {
-		
-//		ћожно ли если параметр tint - true , возвращать стоку
+//		ћожно ли если параметр tint - true , возвращать строку
 		return "Visor: "+super.toString()+", tint=" + isTint();
 	}
 	

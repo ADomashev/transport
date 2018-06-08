@@ -73,6 +73,10 @@ public class Bus extends GroundTransport{
 			Bus.this.setWifi(wifi);
 			return this;
 		}
+		
+		public Bus build() {
+			return Bus.this;
+		}
 	}
 	
 	
